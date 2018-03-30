@@ -226,6 +226,11 @@ public class GenericData {
     @Override public int compareTo(Record that) {
       return GenericData.get().compare(this, that, schema);
     }
+
+    public int compareTo(Record that, boolean equals) {
+      return GenericData.get().compare(this, that, schema, equals);
+    }
+
     @Override public String toString() {
       return GenericData.get().toString(this);
     }

@@ -27,9 +27,9 @@
     <relativePath>../</relativePath>
   </parent>
 
-  <artifactId>avro</artifactId>
+  <artifactId>infa-avro</artifactId>
 
-  <name>Apache Avro</name>
+  <name>Infa Apache Avro</name>
   <url>http://avro.apache.org</url>
   <description>Avro core components</description>
   <packaging>bundle</packaging>
@@ -76,6 +76,9 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
+        <!--<configuration>
+            <finalName>myJar</finalName>
+        </configuration>-->
         <executions>
           <execution>
             <goals>
